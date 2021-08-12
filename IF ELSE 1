@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.close();
+        String res = "";
+        if (n % 2 == 1) {
+            res = "Weird";
+        } else {
+            if (n >= 6 && n <= 20) {
+                res = "Weird";
+            } else {
+                res = "Not Weird";
+            }
+        }
+        System.out.println(res);
+    }
+}
